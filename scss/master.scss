@@ -19,6 +19,7 @@
     h1 {
       font-size: 50px;
       font-weight: bold;
+      margin-right: 20px;
     }
   }
 
@@ -75,7 +76,7 @@
 
       .right {
         background-color: red;
-        @include make-flex(2);
+        @include make-flex(7);
       }
     }
 

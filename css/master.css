@@ -374,8 +374,6 @@ th {
 html,
 *:after,
 *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 img {
@@ -385,11 +383,11 @@ img {
 
 section {
   width: 100%;
-  margin: 0 auto; }
+  margin: 0px auto; }
 
 .wrapper, .hero .hero-wrap, .first-wrapper {
   width: 100%;
-  margin: 0 auto;
+  margin: 0px auto;
   max-width: 1200px; }
 
 .row, .hero .hero-wrap, .first-wrapper .callout, .first-wrapper .nested, .first-wrapper .nested .inner {
@@ -407,34 +405,27 @@ section {
     height: 100%;
     align-items: center; }
   .hero .left {
-    margin-right: 20px;
     width: 30%;
     text-align: right; }
-    .hero .left :lastchild {
-      margin-right: 0px; }
     @media (min-width: 512px) and (max-width: 1024px) {
       .hero .left {
         width: 30%; } }
     @media (max-width: 512px) {
       .hero .left {
-        width: auto;
-        margin-right: 0px; } }
+        width: auto; } }
     .hero .left h1 {
       font-size: 50px;
-      font-weight: bold; }
+      font-weight: bold;
+      margin-right: 20px; }
   .hero .right {
-    margin-right: 20px;
     width: 30%;
     text-align: left; }
-    .hero .right :lastchild {
-      margin-right: 0px; }
     @media (min-width: 512px) and (max-width: 1024px) {
       .hero .right {
         width: 30%; } }
     @media (max-width: 512px) {
       .hero .right {
-        width: auto;
-        margin-right: 0px; } }
+        width: auto; } }
     .hero .right h1 {
       font-size: 20px;
       font-weight: normal; }
@@ -448,72 +439,44 @@ section {
 
 .first-wrapper .callout .left {
   background-color: #555;
-  margin-right: 20px;
   width: 30%; }
-  .first-wrapper .callout .left :lastchild {
-    margin-right: 0px; }
   @media (min-width: 512px) and (max-width: 1024px) {
     .first-wrapper .callout .left {
       width: 50%; } }
   @media (max-width: 512px) {
     .first-wrapper .callout .left {
-      width: auto;
-      margin-right: 0px; } }
+      width: auto; } }
 .first-wrapper .callout .right {
   background-color: #666;
-  margin-right: 20px;
   flex: 2; }
-  .first-wrapper .callout .right :lastchild {
-    margin-right: 0px; }
   @media (max-width: 512px) {
     .first-wrapper .callout .right {
-      flex: 1;
-      width: auto;
-      margin-right: 0px; } }
+      width: auto; } }
 .first-wrapper .nested .inner {
-  margin-right: 20px;
   width: 30%; }
-  .first-wrapper .nested .inner :lastchild {
-    margin-right: 0px; }
   @media (min-width: 512px) and (max-width: 1024px) {
     .first-wrapper .nested .inner {
       width: 50%; } }
   @media (max-width: 512px) {
     .first-wrapper .nested .inner {
-      width: auto;
-      margin-right: 0px; } }
+      width: auto; } }
   .first-wrapper .nested .inner .left {
     background-color: pink;
-    margin-right: 20px;
     flex: 2; }
-    .first-wrapper .nested .inner .left :lastchild {
-      margin-right: 0px; }
     @media (max-width: 512px) {
       .first-wrapper .nested .inner .left {
-        flex: 1;
-        width: auto;
-        margin-right: 0px; } }
+        width: auto; } }
   .first-wrapper .nested .inner .right {
     background-color: red;
-    margin-right: 20px;
-    flex: 2; }
-    .first-wrapper .nested .inner .right :lastchild {
-      margin-right: 0px; }
+    flex: 7; }
     @media (max-width: 512px) {
       .first-wrapper .nested .inner .right {
-        flex: 1;
-        width: auto;
-        margin-right: 0px; } }
+        width: auto; } }
 .first-wrapper .nested .next {
   background-color: teal;
-  margin-right: 20px;
   flex: 2; }
-  .first-wrapper .nested .next :lastchild {
-    margin-right: 0px; }
   @media (max-width: 512px) {
     .first-wrapper .nested .next {
-      flex: 1;
-      width: auto;
-      margin-right: 0px; } }
+      width: auto; } }
 
 /*# sourceMappingURL=master.css.map */
