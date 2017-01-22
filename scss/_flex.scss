@@ -52,11 +52,11 @@ section {
 // --------------------------
 .row {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 
   // colapse to columns on small
   @media #{$media-sm} { flex-direction: column; }
-  @media #{$media-md-up} { flex-direction: row; }
 }
 
 

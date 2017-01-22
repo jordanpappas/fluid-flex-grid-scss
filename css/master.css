@@ -394,13 +394,11 @@ section {
 
 .row, .hero .hero-wrap, .first-wrapper .callout, .first-wrapper .nested, .first-wrapper .nested .inner {
   display: flex;
+  flex-direction: row;
   justify-content: center; }
   @media (max-width: 512px) {
     .row, .hero .hero-wrap, .first-wrapper .callout, .first-wrapper .nested, .first-wrapper .nested .inner {
       flex-direction: column; } }
-  @media (min-width: 512px) {
-    .row, .hero .hero-wrap, .first-wrapper .callout, .first-wrapper .nested, .first-wrapper .nested .inner {
-      flex-direction: row; } }
 
 .hero {
   background-color: pink;
@@ -456,7 +454,7 @@ section {
     margin-right: 0px; }
   @media (min-width: 512px) and (max-width: 1024px) {
     .first-wrapper .callout .left {
-      width: 30%; } }
+      width: 50%; } }
   @media (max-width: 512px) {
     .first-wrapper .callout .left {
       width: auto;
@@ -479,7 +477,7 @@ section {
     margin-right: 0px; }
   @media (min-width: 512px) and (max-width: 1024px) {
     .first-wrapper .nested .inner {
-      width: 30%; } }
+      width: 50%; } }
   @media (max-width: 512px) {
     .first-wrapper .nested .inner {
       width: auto;
