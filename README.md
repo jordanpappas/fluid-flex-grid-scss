@@ -1,2 +1,2 @@
 # fluid-flex-grid-scss
-simple, fluid flex grid using scss. includes normalize
+simple, semantic, and fluid flex-grid using scss. includes normalize
