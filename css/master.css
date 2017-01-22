@@ -387,142 +387,133 @@ section {
   width: 100%;
   margin: 0 auto; }
 
-.wrapper {
+.wrapper, .hero .hero-wrap, .first-wrapper {
   width: 100%;
   margin: 0 auto;
   max-width: 1200px; }
 
-.row, .hero .hero-wrap, .callout, .nested, .nested .inner {
+.row, .hero .hero-wrap, .first-wrapper .callout, .first-wrapper .nested, .first-wrapper .nested .inner {
   display: flex;
   justify-content: center; }
   @media (max-width: 512px) {
-    .row, .hero .hero-wrap, .callout, .nested, .nested .inner {
+    .row, .hero .hero-wrap, .first-wrapper .callout, .first-wrapper .nested, .first-wrapper .nested .inner {
       flex-direction: column; } }
   @media (min-width: 512px) {
-    .row, .hero .hero-wrap, .callout, .nested, .nested .inner {
+    .row, .hero .hero-wrap, .first-wrapper .callout, .first-wrapper .nested, .first-wrapper .nested .inner {
       flex-direction: row; } }
 
-.row, .hero .hero-wrap, .callout, .nested, .nested .inner {
-  text-align: center; }
-
-.hero .hero-wrap {
+.hero {
   background-color: pink;
-  height: 80vh;
-  align-items: center; }
-.hero .left {
-  margin-right: 20px;
-  width: 30%;
-  text-align: right; }
-  .hero .left :lastchild {
-    margin-right: 0px; }
-  @media (min-width: 512px) and (max-width: 1024px) {
-    .hero .left {
-      width: 30%; } }
-  @media (max-width: 512px) {
-    .hero .left {
-      width: auto;
-      margin-right: 0px; } }
-  .hero .left h1 {
-    font-size: 50px;
-    font-weight: bold; }
-.hero .right {
-  margin-right: 20px;
-  width: 30%;
-  text-align: left;
-  font-size: 20px;
-  font-weight: normal;
-  margin-right: 20px;
-  width: 30%; }
-  .hero .right :lastchild {
-    margin-right: 0px; }
-  @media (min-width: 512px) and (max-width: 1024px) {
-    .hero .right {
-      width: 30%; } }
-  @media (max-width: 512px) {
-    .hero .right {
-      width: auto;
-      margin-right: 0px; } }
-  .hero .right :lastchild {
-    margin-right: 0px; }
-  @media (min-width: 512px) and (max-width: 1024px) {
-    .hero .right {
-      width: 30%; } }
-  @media (max-width: 512px) {
-    .hero .right {
-      width: auto;
-      margin-right: 0px; } }
+  height: 80vh; }
+  .hero .hero-wrap {
+    height: 100%;
+    align-items: center; }
+  .hero .left {
+    margin-right: 20px;
+    width: 30%;
+    text-align: right; }
+    .hero .left :lastchild {
+      margin-right: 0px; }
+    @media (min-width: 512px) and (max-width: 1024px) {
+      .hero .left {
+        width: 30%; } }
+    @media (max-width: 512px) {
+      .hero .left {
+        width: auto;
+        margin-right: 0px; } }
+    .hero .left h1 {
+      font-size: 50px;
+      font-weight: bold; }
+  .hero .right {
+    margin-right: 20px;
+    width: 30%;
+    text-align: left; }
+    .hero .right :lastchild {
+      margin-right: 0px; }
+    @media (min-width: 512px) and (max-width: 1024px) {
+      .hero .right {
+        width: 30%; } }
+    @media (max-width: 512px) {
+      .hero .right {
+        width: auto;
+        margin-right: 0px; } }
+    .hero .right h1 {
+      font-size: 20px;
+      font-weight: normal; }
+
+.left, .right, .next {
+  text-align: center; }
 
 .first-section {
   background-color: #333;
   height: 100vh; }
 
-.callout .left {
+.first-wrapper .callout .left {
   background-color: #555;
   margin-right: 20px;
   width: 30%; }
-  .callout .left :lastchild {
+  .first-wrapper .callout .left :lastchild {
     margin-right: 0px; }
   @media (min-width: 512px) and (max-width: 1024px) {
-    .callout .left {
+    .first-wrapper .callout .left {
       width: 30%; } }
   @media (max-width: 512px) {
-    .callout .left {
+    .first-wrapper .callout .left {
       width: auto;
       margin-right: 0px; } }
-.callout .right {
+.first-wrapper .callout .right {
   background-color: #666;
   margin-right: 20px;
   flex: 2; }
-  .callout .right :lastchild {
+  .first-wrapper .callout .right :lastchild {
     margin-right: 0px; }
   @media (max-width: 512px) {
-    .callout .right {
+    .first-wrapper .callout .right {
       flex: 1;
       width: auto;
       margin-right: 0px; } }
-
-.nested .inner {
+.first-wrapper .nested .inner {
   margin-right: 20px;
   width: 30%; }
-  .nested .inner :lastchild {
+  .first-wrapper .nested .inner :lastchild {
     margin-right: 0px; }
   @media (min-width: 512px) and (max-width: 1024px) {
-    .nested .inner {
+    .first-wrapper .nested .inner {
       width: 30%; } }
   @media (max-width: 512px) {
-    .nested .inner {
+    .first-wrapper .nested .inner {
       width: auto;
       margin-right: 0px; } }
-  .nested .inner .left {
+  .first-wrapper .nested .inner .left {
     background-color: pink;
     margin-right: 20px;
     flex: 2; }
-    .nested .inner .left :lastchild {
+    .first-wrapper .nested .inner .left :lastchild {
       margin-right: 0px; }
     @media (max-width: 512px) {
-      .nested .inner .left {
+      .first-wrapper .nested .inner .left {
         flex: 1;
         width: auto;
         margin-right: 0px; } }
-  .nested .inner .right {
+  .first-wrapper .nested .inner .right {
     background-color: red;
     margin-right: 20px;
     flex: 2; }
-    .nested .inner .right :lastchild {
+    .first-wrapper .nested .inner .right :lastchild {
       margin-right: 0px; }
     @media (max-width: 512px) {
-      .nested .inner .right {
+      .first-wrapper .nested .inner .right {
         flex: 1;
         width: auto;
         margin-right: 0px; } }
-.nested .next {
+.first-wrapper .nested .next {
   background-color: teal;
   margin-right: 20px;
   flex: 2; }
-  .nested .next :lastchild {
+  .first-wrapper .nested .next :lastchild {
     margin-right: 0px; }
   @media (max-width: 512px) {
-    .nested .next {
+    .first-wrapper .nested .next {
       flex: 1;
       width: auto;
       margin-right: 0px; } }

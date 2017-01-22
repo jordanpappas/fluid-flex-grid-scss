@@ -1,14 +1,15 @@
 @import "flex";
 
-.row {
-  text-align: center;
-}
-
+// hero
+// --------------------------
 .hero {
+  background-color: pink;
+  height: 80vh;
+
   .hero-wrap {
-    background-color: pink;
+    @extend .wrapper;
     @extend .row;
-    height: 80vh;
+    height: 100%;
     align-items: center;
   }
 
@@ -24,51 +25,63 @@
   .right {
     @include make-flex-width(30%, 30%);
     text-align: left;
-    font-size: 20px;
-    font-weight: normal;
-    @include make-flex-width(30%, 30%);
+    h1 {
+      font-size: 20px;
+      font-weight: normal;
+    }
   }
 }
+
+
+// first section
+// --------------------------
+.left, .right, .next { text-align: center;}
 
 .first-section {
   background-color: #333;
   height: 100vh;
 }
 
-.callout {
-  @extend .row;
+.first-wrapper {
+  @extend .wrapper;
 
-  .left {
-    background-color: #555;
-    @include make-flex-width(30%, 30%);
-  }
-
-  .right {
-    background-color: #666;
-    @include make-flex(2);
-  }
-}
-
-.nested {
-  @extend .row;
-
-  .inner {
+  // callout row
+  .callout {
     @extend .row;
-    @include make-flex-width(30%, 30%);
 
     .left {
-      background-color: pink;
-      @include make-flex(2);
+      background-color: #555;
+      @include make-flex-width(30%, 30%);
     }
 
     .right {
-      background-color: red;
+      background-color: #666;
       @include make-flex(2);
     }
   }
 
-  .next {
-    background-color: teal;
-    @include make-flex(2);
+  // nested row
+  .nested {
+    @extend .row;
+
+    .inner {
+      @extend .row;
+      @include make-flex-width(30%, 30%);
+
+      .left {
+        background-color: pink;
+        @include make-flex(2);
+      }
+
+      .right {
+        background-color: red;
+        @include make-flex(2);
+      }
+    }
+
+    .next {
+      background-color: teal;
+      @include make-flex(2);
+    }
   }
 }
