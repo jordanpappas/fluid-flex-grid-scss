@@ -1,0 +1,87 @@
+@import "normalize";
+
+/*  Flex Grid - JordanPappas
+----------------------------- */
+
+$sm-max: 512px;
+$md-max: 1024px;
+$lg-max: 1200px;
+
+$media-sm: "(max-width: #{$sm-max})";
+$media-md: "(min-width: #{$sm-max}) and (max-width:#{$md-max})";
+$media-lg: "(min-width: #{$md-max})";
+$media-md-up: "(min-width: #{$sm-max})";
+
+
+// box-sizing: border-box;
+// --------------------------
+*,
+html,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+// images
+// --------------------------
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important;
+}
+
+
+// section & wrapper
+// --------------------------
+section {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+// rows
+// --------------------------
+.row {
+  display: flex;
+  justify-content: center;
+
+  // colapse to columns on small
+  @media #{$media-sm} { flex-direction: column; }
+  @media #{$media-md-up} { flex-direction: row; }
+}
+
+
+// columns
+// --------------------------
+@mixin make-flex($flex-size) {
+  margin-right: 20px;
+  :lastchild { margin-right: 0px; }
+  flex: $flex-size;
+
+  @media #{$media-sm} {
+    flex: 1;
+    width: auto;
+    margin-right: 0px;
+  }
+}
+
+@mixin make-flex-width($w-lg, $w-md) {
+  margin-right: 20px;
+  :lastchild { margin-right: 0px; }
+  width: $w-lg;
+  @media #{$media-md} { width: $w-md; }
+
+  @media #{$media-sm} {
+    width: auto;
+    margin-right: 0px;
+  }
+}

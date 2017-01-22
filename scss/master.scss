@@ -1,0 +1,74 @@
+@import "flex";
+
+.row {
+  text-align: center;
+}
+
+.hero {
+  .hero-wrap {
+    background-color: pink;
+    @extend .row;
+    height: 80vh;
+    align-items: center;
+  }
+
+  .left {
+    @include make-flex-width(30%, 30%);
+    text-align: right;
+    h1 {
+      font-size: 50px;
+      font-weight: bold;
+    }
+  }
+
+  .right {
+    @include make-flex-width(30%, 30%);
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    @include make-flex-width(30%, 30%);
+  }
+}
+
+.first-section {
+  background-color: #333;
+  height: 100vh;
+}
+
+.callout {
+  @extend .row;
+
+  .left {
+    background-color: #555;
+    @include make-flex-width(30%, 30%);
+  }
+
+  .right {
+    background-color: #666;
+    @include make-flex(2);
+  }
+}
+
+.nested {
+  @extend .row;
+
+  .inner {
+    @extend .row;
+    @include make-flex-width(30%, 30%);
+
+    .left {
+      background-color: pink;
+      @include make-flex(2);
+    }
+
+    .right {
+      background-color: red;
+      @include make-flex(2);
+    }
+  }
+
+  .next {
+    background-color: teal;
+    @include make-flex(2);
+  }
+}
