@@ -16,16 +16,19 @@
   .left {
     @include make-flex-width(30%, 30%);
     text-align: right;
+    @media #{$media-sm} { text-align: center;}
     h1 {
       font-size: 50px;
       font-weight: bold;
       margin-right: 20px;
+      @media #{$media-sm} { margin-right: 0px;}
     }
   }
 
   .right {
     @include make-flex-width(30%, 30%);
     text-align: left;
+    @media #{$media-sm} { text-align: center;}
     h1 {
       font-size: 20px;
       font-weight: normal;

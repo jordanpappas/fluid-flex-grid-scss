@@ -413,10 +413,16 @@ section {
     @media (max-width: 512px) {
       .hero .left {
         width: auto; } }
+    @media (max-width: 512px) {
+      .hero .left {
+        text-align: center; } }
     .hero .left h1 {
       font-size: 50px;
       font-weight: bold;
       margin-right: 20px; }
+      @media (max-width: 512px) {
+        .hero .left h1 {
+          margin-right: 0px; } }
   .hero .right {
     width: 30%;
     text-align: left; }
@@ -426,6 +432,9 @@ section {
     @media (max-width: 512px) {
       .hero .right {
         width: auto; } }
+    @media (max-width: 512px) {
+      .hero .right {
+        text-align: center; } }
     .hero .right h1 {
       font-size: 20px;
       font-weight: normal; }
